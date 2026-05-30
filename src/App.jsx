@@ -2,6 +2,10 @@ import './App.css';
 import profileImage from './assets/picc.png';
 import todoImage from './assets/todo.png';
 import habitImage from './assets/habit.png';
+import phoneIcon from './assets/calling.png';
+import emailIcon from './assets/message.png';
+import linkedinIcon from './assets/linkedin.png';
+import githubIcon from './assets/github (2).png';
 
 function App() {
   return (
@@ -29,8 +33,27 @@ function App() {
 
       {/* BUTTONS */}
       <div className="prof-buttons">
-        <button className="btn">VIEW PROJECTS</button>
-        <button className="btn">DOWNLOAD CV</button>
+        <button className="btn" onClick={() => {
+          const projectsSection = document.querySelector('.projects-section');
+          if (projectsSection) {
+            projectsSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        }}>
+          VIEW PROJECTS
+        </button>
+        <button
+          className="btn"
+          onClick={() => {
+            const link = document.createElement("a");
+            link.href = "/cv.pdf";
+            link.download = "Tanatswa_CV.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          }}
+        >
+          Download CV
+        </button>
       </div>
 
       {/* ABOUT SECTION */}
@@ -111,6 +134,29 @@ function App() {
             <p>HTML5, CSS3, JavaScript, Local Storage</p>
             <a href="https://tanatswasibanda.github.io/To-Do-WebApp/" target="_blank" className="project-link">View Project</a>
           </div>
+        </div>
+      </div>
+
+      {/*CONTACT SECTION*/}
+      <div className="contact-section">
+        <h2>Contact Me</h2>
+        <div className="contact-info">
+          <a href="tel:+263780267447" >
+            <img src={phoneIcon} alt="Phone" className="contact-link" />
+
+          </a>
+          <a href="mailto:tanatswa.m.sibanda@gmail.com" >
+            <img src={emailIcon} alt="Email" className="contact-link" />
+
+          </a>
+          <a href="https://www.linkedin.com/in/tanatswa-sibanda-174839268/" target="_blank" rel="noopener noreferrer" >
+            <img src={linkedinIcon} alt="LinkedIn" className="contact-link" />
+
+          </a>
+          <a href="https://github.com/TanatswaSibanda" target="_blank" rel="noopener noreferrer" >
+            <img src={githubIcon} alt="GitHub" className="contact-link" />
+
+          </a>
         </div>
       </div>
 
