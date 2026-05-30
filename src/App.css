@@ -453,6 +453,8 @@ body {
 @media (max-width: 480px) {
   .app-container {
     padding: 20px 16px;
+    width: 100%;
+    /* ADD THIS - ensures full width on mobile */
   }
 
   .profile {
@@ -495,9 +497,37 @@ body {
     font-size: 14px;
   }
 
+  /* FIXED PROJECTS SECTION - ADD THESE RULES */
+  .projects-section {
+    padding: 24px 16px;
+    width: 100%;
+  }
+
   .project-cards {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .project-card p {
+    font-size: 14px;
+  }
+
+  .project-card h3 {
+    font-size: 20px;
   }
 
   /* SKILLS RESPONSIVE - mobile */
