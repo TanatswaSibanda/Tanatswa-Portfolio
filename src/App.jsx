@@ -52,7 +52,7 @@ function App() {
             document.body.removeChild(link);
           }}
         >
-          Download CV
+          DOWNLOAD CV
         </button>
       </div>
 
