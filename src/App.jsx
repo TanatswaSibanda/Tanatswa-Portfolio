@@ -141,21 +141,20 @@ function App() {
       <div className="contact-section">
         <h2>Contact Me</h2>
         <div className="contact-info">
-          <a href="tel:+263780267447" >
-            <img src={phoneIcon} alt="Phone" className="contact-link" />
-
+          <a href="tel:+263780267447">
+            <FontAwesomeIcon icon={faPhone} className="contact-link" color="white" size="2x" />
           </a>
-          <a href="mailto:tanatswa.m.sibanda@gmail.com" >
-            <img src={emailIcon} alt="Email" className="contact-link" />
 
+          <a href="mailto:tanatswa.m.sibanda@gmail.com">
+            <FontAwesomeIcon icon={faEnvelope} className="contact-link" color="white" size="2x" />
           </a>
-          <a href="https://www.linkedin.com/in/tanatswa-sibanda-174839268/" target="_blank" rel="noopener noreferrer" >
-            <img src={linkedinIcon} alt="LinkedIn" className="contact-link" />
 
+          <a href="https://www.linkedin.com/in/tanatswa-sibanda-174839268/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} className="contact-link" color="white" size="2x" />
           </a>
-          <a href="https://github.com/TanatswaSibanda" target="_blank" rel="noopener noreferrer" >
-            <img src={githubIcon} alt="GitHub" className="contact-link" />
 
+          <a href="https://github.com/TanatwaSibanda" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} className="contact-link" color="white" size="2x" />
           </a>
         </div>
       </div>
