@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "react-dom": "^19.2.5",
+    "react-native-vector-icons": "^10.3.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
