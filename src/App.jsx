@@ -104,7 +104,7 @@ function App() {
             <ul>
               <li>Problem Solving</li>
               <li>Communication</li>
-              <li>Team Collaboration</li>
+              <li>Team-Collaboration</li>
               <li>Continuous Learning</li>
             </ul>
           </div>
