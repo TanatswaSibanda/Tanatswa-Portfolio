@@ -230,6 +230,10 @@ body {
   transform: translateY(-5px);
 }
 
+.skills-section li {
+  list-style-type: none;
+}
+
 
 
 .projects-section {
@@ -546,6 +550,5 @@ body {
   .contact-link {
     width: 45px;
     height: 45px;
-
   }
 }
