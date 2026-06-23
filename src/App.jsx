@@ -153,7 +153,7 @@ function App() {
             <FontAwesomeIcon icon={faLinkedin} className="contact-link" color="white" size="2x" />
           </a>
 
-          <a href="https://github.com/TanatwaSibanda" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/TanatswaSibanda" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} className="contact-link" color="white" size="2x" />
           </a>
         </div>
